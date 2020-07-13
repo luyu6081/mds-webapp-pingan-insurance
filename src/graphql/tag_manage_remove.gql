@@ -1,0 +1,3 @@
+mutation removeTag ($input:[ID]) {
+  removeTag: tagInfoDelete (input: $input)
+}

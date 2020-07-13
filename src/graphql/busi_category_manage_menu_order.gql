@@ -1,0 +1,4 @@
+# 更新类目菜单排序
+mutation updateOrder ($ids: [ID!]!) {
+  updateOrder: mdsUpdateCategoryOrder (ids: $ids)
+}

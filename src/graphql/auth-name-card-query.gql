@@ -1,0 +1,7 @@
+#import './auth-user-fragment.gql'
+
+query authSelectUserByNameOrCard ($input: AuthUserParamInput) {
+  users: authSelectUserByNameOrCard (input: $input) {
+    ...OauthUserVOFields
+  }
+}

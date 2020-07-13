@@ -1,0 +1,3 @@
+mutation createTag ($input: TagInfoDTO) {
+  createTag: tagInfoCreate (input: $input)
+}

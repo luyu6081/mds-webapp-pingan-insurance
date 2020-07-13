@@ -1,0 +1,5 @@
+# 更新技术类目菜单(一级&&二级)
+
+mutation updateTechCategoryLevel ($input: MdsAddTechCategoryLevel1Level2Input!) {
+  updateTechCategoryLevel: mdsUpdateTechCategoryLevel1Level2 (input: $input)
+}

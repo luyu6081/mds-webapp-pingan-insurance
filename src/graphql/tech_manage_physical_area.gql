@@ -1,0 +1,7 @@
+#import "./tech_manage_physical_fragment.gql"
+
+query loadPhysicalArea {
+  loadPhysicalArea: mdsLoadPhysicalArea {
+    ...PhysicalArea
+  }
+}

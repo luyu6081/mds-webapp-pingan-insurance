@@ -1,0 +1,24 @@
+{
+  "amount": 232334,
+  "pageSize": 100,
+  "pageTotal": 400,
+  "lists": [
+    {"id": 1, "title": "会员信息是什么？", "time": "2018-02-23 18:03", "desc": "会员信息基础会员信息基础信息表会表会员信息基础信息表会表会员信息基础信息表会员信息基础信息表会员信息基础会员信息基础信息表会表", "table": {"id":1, "name": "dwd_mbr_iw_base_dd ( 会员信息表，账户状态 )"}, "quality": "高质量", "count": 2903, "reply": 2},
+    {"id": 2, "title": "会员信息是什么？", "time": "2018-02-23 18:03", "desc": "会员信息基础会员信息基础信息表会表会员会员信息基础信息表会表会员信息基础信息表会员信息基础信息表会员信息基础", "table": {"id":2, "name": "dwd_mbr_iw_base_dd ( 会员信息表，账户状态 )"}, "quality": "高质量", "count": 2903, "reply": 2},
+    {"id": 3, "title": "会员信息是什么？", "time": "2018-02-23 18:03", "desc": "员信息基础信息表会员信息基础信息表会员信息基础", "table": {"id":3, "name": "dwd_mbr_iw_base_dd ( 会员信息表，账户状态 )"}, "quality": "高质量", "count": 2903, "reply": 2},
+    {"id": 4, "title": "会员信息是什么？", "time": "2018-02-23 18:03", "desc": "会员信息基础会员信息基础信息表会表会员会员信息基础信息表会表会员信息基础信息表会员信息基础信息表会员信息基础", "table": {"id":4, "name": "dwd_mbr_iw_base_dd ( 会员信息表，账户状态 )"}, "quality": "高质量", "count": 2903, "reply": 2},
+    {"id": 5, "title": "会员信息是什么？", "time": "2018-02-23 18:03", "desc": "会员信息基础会员信息基础信息表会表会员会员信息基础信息表会表会员信息基础信息表会员信息基础信息表会员信息基础", "table": {"id":5, "name": "dwd_mbr_iw_base_dd ( 会员信息表，账户状态 )"}, "quality": "高质量", "count": 2903, "reply": 2},
+    {"id": 6, "title": "会员信息是什么？", "time": "2018-02-23 18:03", "desc": "会员信息基础会员信息基础信息表会表会员会员信息基础信息表会表会员信息基础信息表会员信息基础信息表会员信息基础", "table": {"id":6, "name": "dwd_mbr_iw_base_dd ( 会员信息表，账户状态 )"}, "quality": "高质量", "count": 2903, "reply": 2},
+    {"id": 7, "title": "会员信息是什么？", "time": "2018-02-23 18:03", "desc": "会员信息基础会员信息基础信息表会表会员会员信息基础信息表会表会员信息基础信息表会员信息基础信息表会员信息基础", "table": {"id":7, "name": "dwd_mbr_iw_base_dd ( 会员信息表，账户状态 )"}, "quality": "高质量", "count": 2903, "reply": 2},
+    {"id": 8, "title": "会员信息是什么？", "time": "2018-02-23 18:03", "desc": "会员信息基础会员信息基础信息表会表会员会员信息基础信息表会表会员信息基础信息表会员信息基础信息表会员信息基础", "table": {"id":8, "name": "dwd_mbr_iw_base_dd ( 会员信息表，账户状态 )"}, "quality": "高质量", "count": 2903, "reply": 2}
+  ],
+  "mdata": [
+    {"id": 1, "table": "dwd_mbr_iw_base_dd", "count": 2},
+    {"id": 2, "table": "dwd_mbr_iw_base_dd", "count": 2},
+    {"id": 3, "table": "dwd_mbr_iw_base_dd", "count": 2},
+    {"id": 4, "table": "dwd_mbr_iw_base_dd", "count": 2},
+    {"id": 5, "table": "dwd_mbr_iw_base_dd", "count": 2},
+    {"id": 6, "table": "dwd_mbr_iw_base_dd", "count": 2},
+    {"id": 7, "table": "dwd_mbr_iw_base_dd", "count": 2}
+  ]
+}

@@ -1,0 +1,4 @@
+# 取消关联关系
+mutation removeMdsToBusi ($mdsIds: [ID!]!, $busiCateIds: [ID!]!) {
+  removeMdsToBusi: mdsRemoveMdsFromBusiCategory (mdsIds: $mdsIds, busiCateIds: $busiCateIds)
+}

@@ -1,0 +1,14 @@
+# 新建技术类目(三级-预览)
+mutation categoryPreview ($input: MdsTechCatalogInput!)  {
+  categoryPreview: mdsAddTechCatalogPreview (input: $input) {
+    importJobId
+    # 导入总数
+    amount
+    # 新增数量
+    add
+    # 删除数量
+    delete
+    # 修改数量
+    update
+  }
+}

@@ -1,0 +1,6 @@
+fragment FilterTermItem on FilterTermItem {
+  # 过滤条件检索用的 id
+  value: id
+  # 过滤条件显示用的名字
+  label: name
+}

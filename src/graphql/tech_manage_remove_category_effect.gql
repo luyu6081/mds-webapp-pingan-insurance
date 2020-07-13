@@ -1,0 +1,4 @@
+# 查询移除技术类目影响
+query removeCategoryEffect ($techCateId: ID!)  {
+  removeCategoryEffect: mdsDeleteTechCategoryEffect (techCateId: $techCateId)
+}

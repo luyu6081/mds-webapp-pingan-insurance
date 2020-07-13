@@ -1,0 +1,4 @@
+# 将删除技术类目
+mutation removeTechCategory ($techCateId: ID!)  {
+  removeTechCategory: mdsDeleteTechCategory (techCateId: $techCateId)
+}

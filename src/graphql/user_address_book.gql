@@ -1,0 +1,29 @@
+# 查询全部机构列表
+query organization ($input:AuthOrganizationParamInput)  {
+  organization: selectAllOrganization (input: $input) {
+    ### 机构ID ###
+    id: organizationId
+    ###父Id ###
+    parentId
+    ### 机构名称 ###
+    label: organizationName
+    ### 机构编码 ###
+    organizationCode
+    ### 机构编号 ###
+    organizationNumber
+    ### 机构地址 ###
+    organizationAddress
+    ### 负责人姓名 ###
+    managerName
+    ### 负责人电话 ###
+    managerPhone
+    ### 负责人邮箱 ###
+    managerMail
+    ### 部门下人员信息 ###
+    oauthUsers {
+      userId
+      label: username
+      id: userSex
+    }
+  }
+}

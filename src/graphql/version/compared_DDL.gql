@@ -1,0 +1,9 @@
+# 获取版本详情
+query mdsGenerateDDLWithVersionIds ($mdsObjectId: ID!, $verIds: [ID!]!) {
+  data: mdsGenerateDDLWithVersionIds (mdsObjectId: $mdsObjectId, verIds: $verIds) {
+    # 版本id
+    versionId
+    # DDL语句
+    ddl
+  }
+}

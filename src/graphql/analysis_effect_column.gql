@@ -1,0 +1,7 @@
+#import "./analysis_details_fragment.gql"
+
+query AnalysisBloodDetails ($input: MdsAnalysisQueryInput)  {
+  blood: mdsAnlsColUp (input: $input) {
+    ...MdsAnalysisObject
+  }
+}

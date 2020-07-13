@@ -1,0 +1,3 @@
+mutation saveDbSource ($input: MdsDbSourceInput!) {
+  saveDbSource: mdsSaveDbSource (input: $input)
+}

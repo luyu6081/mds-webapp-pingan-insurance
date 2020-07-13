@@ -1,0 +1,28 @@
+query homeLists {
+  homeLists: mdsLoadUserCollections {
+    # 近期浏览
+    visited: browse {
+      id
+      name
+      chineseName
+    }
+    # 我的收藏
+    favorites: collect{
+      id
+      name
+      chineseName
+    }
+    # 值得关注
+    recommended: recommend {
+      id
+      name
+      chineseName
+    }
+    # 订阅更新
+    updates: subscribe{
+      id
+      name
+      chineseName
+    }
+  }
+}

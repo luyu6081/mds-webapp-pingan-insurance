@@ -1,0 +1,11 @@
+### 查询全部租户下标签 ###
+
+query tagSelectAll ($input:TagMarkUpInput)  {
+  tagSelectAll (input: $input) {
+    ### 主键Id ###
+    value: tagId
+
+    ### tag名称 ###
+    label: tagName
+  }
+}

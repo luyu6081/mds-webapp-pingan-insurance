@@ -1,0 +1,12 @@
+#import "./log_manage_fragment.gql"
+
+query logList ($input: MdsLoadMdsUpdateLogByConditionInput)  {
+  logList: mdsLoadMdsUpdateLogByCondition (input: $input) {
+    total
+    size
+    offset
+    data {
+      ...MdsUpdateLog
+    }
+  }
+}

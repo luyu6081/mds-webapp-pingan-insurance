@@ -1,0 +1,3 @@
+mutation collectOpera ($mdsObjectId: ID!, $isOperations: Boolean!) {
+  collectOpera: mdsCollectMdsObject (mdsObjectId: $mdsObjectId, isOperations: $isOperations) 
+}

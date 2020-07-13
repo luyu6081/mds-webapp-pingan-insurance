@@ -1,0 +1,5 @@
+# 新建技术类目(一级&&二级)
+
+mutation addTechCategoryLevel ($input: MdsAddTechCategoryLevel1Level2Input) {
+  addTechCategoryLevel: mdsAddTechCategoryLevel1Level2 (input: $input)
+}

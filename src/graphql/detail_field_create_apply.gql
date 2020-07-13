@@ -1,0 +1,4 @@
+# 批量新增用户字段权限记录和表的权限时间，提交工作流（新增）
+mutation d4aUserTabFieldTaskCreate ($input: D4aUserTabFieldInsertInput) {
+  createFieldApply: d4aUserTabFieldTaskCreate (input: $input)
+}

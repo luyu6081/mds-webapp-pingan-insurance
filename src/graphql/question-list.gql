@@ -1,0 +1,11 @@
+query mdsQuestionList {
+  dataDetails: mdsQuestionList {
+    id
+    title
+    replyNum
+    time
+    user {
+      avatar
+    }
+  }
+}

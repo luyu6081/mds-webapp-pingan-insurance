@@ -1,0 +1,12 @@
+fragment User on User {
+  id
+  name
+  phone
+  email
+  address
+  avatar
+  position
+  jobNumber
+  telephone
+  depts
+}

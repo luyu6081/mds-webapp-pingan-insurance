@@ -1,0 +1,10 @@
+#import "./analysis_details_fragment.gql"
+
+query columnAnalysis ($input: MdsAnalysisQueryInput)  {
+  analysis: mdsAnalysisColumn (input: $input) {
+    nodes {
+      ...MdsNode
+    }
+    edges
+  }
+}

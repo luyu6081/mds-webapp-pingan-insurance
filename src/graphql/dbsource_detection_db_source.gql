@@ -1,0 +1,5 @@
+
+# 测试一个数据源
+query DetectionDbSource ($input: MdsDbSourceInput)  {
+  detectionDbSource: mdsDetectionDbSource (input: $input)
+}

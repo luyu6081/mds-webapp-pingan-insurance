@@ -1,0 +1,14 @@
+mutation createTag ($mdsObjectId: ID!, $tagName: String!) {
+  createTag: mdsUserPasteTag (mdsObjectId: $mdsObjectId, tagName: $tagName) {
+    # tagObjectId
+    id: tagObjectId
+    # tag名称
+    name: tagName
+    # 点赞数
+    score: praiseCount
+    # 是否投过票
+    voted
+    # 是否可删除
+    removable
+  }
+}

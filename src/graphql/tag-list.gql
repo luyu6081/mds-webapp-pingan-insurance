@@ -1,0 +1,17 @@
+query tagList ($mdsObjectId: ID!, $isRecordPv: Boolean)  {
+  tagList: mdsLoadMdsObject (mdsObjectId: $mdsObjectId, isRecordPv: $isRecordPv) {
+    id 
+    tags {
+      # tagObjectId
+      id: tagObjectId
+      # tag名称
+      name: tagName
+      # 点赞数
+      score: praiseCount
+      # 是否投过票
+      voted
+      # 是否可删除
+      removable
+    }
+  }
+}

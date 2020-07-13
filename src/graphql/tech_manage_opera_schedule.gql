@@ -1,0 +1,4 @@
+# 执行调度
+mutation operaSchedule ($mdsScheduleId: ID!)  {
+  operaSchedule: mdsExecSchedule (mdsScheduleId: $mdsScheduleId)
+}

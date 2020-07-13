@@ -1,0 +1,4 @@
+# 获取数据源类型列表
+query DbSourceType {
+  dbSourceType: mdsLoadDbSourceType
+}

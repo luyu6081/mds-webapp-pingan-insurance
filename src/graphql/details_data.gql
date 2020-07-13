@@ -1,0 +1,7 @@
+#import "./details_object_fragment.gql"
+
+query dataDetails ($mdsObjectId: ID!, $isRecordPv: Boolean)  {
+  dataDetails: mdsLoadMdsObject (mdsObjectId: $mdsObjectId, isRecordPv: $isRecordPv) {
+    ...MdsObject
+  }
+}

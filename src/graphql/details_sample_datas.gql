@@ -1,0 +1,7 @@
+# 数据预览
+query ($mdsObjectId: ID!){
+  getSampleDatas: mdsGetSampleDatas(mdsObjectId: $mdsObjectId) {
+    columns
+    data
+  }
+}

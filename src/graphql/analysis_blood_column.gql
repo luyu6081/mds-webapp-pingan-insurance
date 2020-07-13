@@ -1,0 +1,7 @@
+#import "./analysis_details_fragment.gql"
+
+query AnalysisEffectDetails ($input: MdsAnalysisQueryInput)  {
+  effect: mdsAnlsColDown (input: $input) {
+    ...MdsAnalysisObject
+  }
+}

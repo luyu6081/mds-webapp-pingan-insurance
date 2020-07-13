@@ -1,0 +1,4 @@
+# 新建关联关系
+mutation addMdsToBusi ($mdsIds: [ID!]!, $busiCateIds: [ID!]!) {
+  addMdsToBusi: mdsAddMdsToBusiCategory (mdsIds: $mdsIds, busiCateIds: $busiCateIds)
+}

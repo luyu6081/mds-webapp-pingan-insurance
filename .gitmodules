@@ -1,0 +1,10 @@
+[submodule "ej-ui"]
+	path = externals/ej-ui
+	url = ../../infra_front/ej-ui.git
+	branch = dev
+[submodule "ej-eslint-config"]
+	path = externals/ej-eslint-config
+	url = ../../infra_front/ej-eslint-config.git
+[submodule "externals/ej-tailwind-config"]
+	path = externals/ej-tailwind-config
+	url = git@gitlab.com:ejresearch/infra_front/ej-tailwind-config.git

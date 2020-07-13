@@ -1,0 +1,16 @@
+# 获取版本详情
+query mdsLoadMdsHistoryObject ($mdsObjectId: ID!, $version: ID!) {
+  data: mdsLoadMdsHistoryObject (mdsObjectId: $mdsObjectId, version: $version) {
+    # 存储量(KB)
+    storageSize
+    mdsColumns {
+      id
+      # 元数据字段名字
+      name
+      # 元数据字段类型
+      type
+      # 元数据字段描述
+      desc
+    }
+  }
+}

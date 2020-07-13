@@ -1,0 +1,21 @@
+#import "./tech_manage_physical_fragment.gql"
+# Mds菜单
+fragment MdsCategory on MdsCategory {
+  id
+  parentId
+  name
+  level
+  # 菜单状态
+  status
+  type
+  # 菜单技术层级类型: 系统 / 应用　/ 库
+  techLevelType
+  # 菜单业务类型: 文件夹 / 文件　
+  busiLevelType
+  #菜单中所有MdsObject的类型: 表 / 接口 / 文件
+  mdsType
+  # 物理区域
+  physicalArea {
+    ...PhysicalArea
+  }
+}

@@ -1,0 +1,149 @@
+#import "./details_user_fragment.gql"
+
+fragment MdsObject on MdsObject {
+  id
+  # 表名
+  name
+  # 表中文名字
+  chineseName
+  # 技术负责人
+  techLinkman {
+    ...User
+  }
+  # 业务负责人
+  busiLinkman {
+    ...User
+  }
+  # 组织结构对象
+  organization {
+    id
+    name
+  }
+  # 集市名字
+  marketName
+  # 描述
+  description
+  # 数据架构层次
+  dataFrameworkLevelName
+  # 技术类目
+  technologyCategory {
+    id
+    name
+  }
+  # 业务类目
+  businessCategories {
+    id
+    name
+  }
+  # 元数据类型
+  mdsObjectTypeEnum
+  # 存储量(KB)
+  storageSize
+  # 存储方式
+  storageTypeEnum
+  # 创建时间
+  createDate
+  # DDL最后更新时间
+  ddlLastUpdateDate
+  # 数据最后变更时间
+  lastChangeDate
+  # 数据最后查询时间
+  lastQueryDate
+  # 所属应用
+  belongApp
+  # 所在资源
+  belongResource
+  # 是否临时表
+  isTmpTable
+  # 元数据描述是否完整
+  isDescCompletion
+  # 所属系统
+  belongSystem
+  # 数据库名
+  dataBaseName
+  # 数据库类型
+  dataBaseType
+  # 记录创建人，insert记录时必须添加
+  creatorMan {
+    ...User
+  }
+  # 记录修改人，update记录时必须更新
+  modifierMan {
+    ...User
+  }
+  # 记录创建时间，create_tm insert记录时必须添加
+  createTm
+  # modify_tm记录修改时间，update记录时必须更新
+  modifyTm
+  # 元数据被打过的标签
+  tags {
+    #tagId
+    tagId: id
+    # tagObjectId
+    id: tagObjectId
+    # tag名称
+    name: tagName
+    # 点赞数
+    score: praiseCount
+    # 是否投过票
+    voted
+    # 是否可删除
+    removable
+  }
+  userData {
+    saved
+    watched
+  }
+  # etljob
+  etlJobs {
+    id
+    name
+  }
+  # 浏览数
+  pv
+  # 版本号
+  version
+  #　火
+  fire
+  # 火（new）
+  isFire
+
+  #资产等级(从资产系统获取)
+  assetsLevel
+  #数据成本（从资产系统获取)
+  dataCost
+  #数据价值(从资产系统获取)
+  dataValue
+  #数据产品(从产品中心来)
+  productNum
+
+  #质量评分(从数据质量获取)
+  qualityScore
+  #标准打分(从数据标准来)
+  standardScore
+  #安全等级(从数据安全来)
+  d4aSafetyRank
+  #数据期限/数据周期
+  dataLife
+
+  # 数据质量规则(从数据质量获取)
+  dqsSchedules {
+    # UUID
+    id
+    # 名称
+    name
+  }
+  # 数据标准公共代码(从数据标准获取)
+  dsStandes {
+    id
+    cnName
+    enName
+  }
+
+  #数据库类型  DbSourceTypeEnum 
+  # dbType
+  dbSourceType
+
+  #json格式， mongoDB / elasticSearch 两种类型都返回json格式
+  columnsJson
+}

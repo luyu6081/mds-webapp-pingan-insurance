@@ -1,0 +1,4 @@
+# 新建类目
+mutation removeCategory ($ids:[ID!]!) {
+  removeCategory: mdsDeleteBusiCategory (ids: $ids)
+}

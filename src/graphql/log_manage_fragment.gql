@@ -1,0 +1,22 @@
+#import "./details_user_fragment.gql"
+
+# 数据源VO对象
+fragment MdsUpdateLog on MdsUpdateLog {
+  #主键id
+  id
+  #平台名
+  platformName
+  #系统名
+  systemName
+  #库名
+  dbname
+  insertAmount
+  updateAmount
+  deleteAmount
+  # 记录创建人
+  creatorMan {
+    ...User
+  }
+  #记录创建时间
+  createTm
+}

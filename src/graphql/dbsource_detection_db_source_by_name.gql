@@ -1,0 +1,4 @@
+# 通过dbSourceID和dbName进行数据库连接测试
+query DetectionDbSourceByName ($dbSourceId: ID!, $dbName: String, $schema: String) {
+  detectionDbSourceByName: mdsDetectionDbName (dbSourceId: $dbSourceId, dbName: $dbName, schema: $schema)
+}

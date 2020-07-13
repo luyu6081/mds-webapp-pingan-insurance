@@ -1,0 +1,8 @@
+# 获取模板下载地址
+query templateFile {
+  templateFile: mdsGetTemplateFiles {
+    id
+    name
+    url
+  }
+}

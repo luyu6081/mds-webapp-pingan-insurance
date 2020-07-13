@@ -1,0 +1,12 @@
+# 获取数据地图 data-map-list.gql
+query loadDataMap  {
+  loadDataMap: mdsLoadDataMap {
+    dataLeft
+    dataRight {
+      id
+      title
+      nums
+      reports
+    }
+  }
+}

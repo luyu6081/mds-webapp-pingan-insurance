@@ -1,0 +1,10 @@
+query versionList ($mdsObjectId: ID!)  {
+  versionList: mdsLoadVersionLog (mdsObjectId: $mdsObjectId) {
+    # 版本号
+    version
+    # 版本内容
+    content
+    # 版本日期
+    date
+  }
+}

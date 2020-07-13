@@ -1,0 +1,42 @@
+#import "./details_user_fragment.gql"
+
+query SearchCategory ($input: MdsSearchQueryInput)  {
+  search: mdsSearch (input: $input) {
+    pageTotal: total
+    offset
+    pageSize: size
+    data {
+      id
+      # 表名
+      name
+      # 表中文名字
+      chineseName
+      # 技术负责人
+      techLinkman {
+        ...User
+      }
+      # 业务负责人
+      busiLinkman {
+        ...User
+      }
+      # 描述
+      description
+      # 所属应用
+      belongApp
+      # 所在资源
+      belongResource
+      # 所属系统
+      belongSystem
+      # 浏览数
+      pv
+      #　火
+      fire
+      # 火 （new）
+      isFire
+      #资产等级(从资产系统获取)
+      assetsLevel
+      #安全等级(从数据安全来)
+      d4aSafetyRank
+    }
+  }
+}

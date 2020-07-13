@@ -1,0 +1,4 @@
+# 新建类目
+mutation createCategory ($input: MdsAddCategoryInput) {
+  createCategory: mdsAddBusiCategory (input: $input)
+}

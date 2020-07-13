@@ -1,0 +1,18 @@
+#import "./search_filter_fragment.gql"
+
+query SearchFilterChoose {
+  filter: mdsLoadFilteTerm {
+    dataLife {
+      ...FilterTermItem
+    }
+    assetsLevel {
+      ...FilterTermItem
+    }
+    d4aSafetyRank {
+      ...FilterTermItem
+    }
+    mdsObjType {
+      ...FilterTermItem
+    }
+  }
+}

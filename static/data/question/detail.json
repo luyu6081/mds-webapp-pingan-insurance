@@ -1,0 +1,61 @@
+{
+  "info": {
+    "title": "会员信息表是什么？",
+    "desc": "会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础？",
+    "date": "2018-02-23 18:03",
+    "img": "https://jianjiaoedu.oss-cn-zhangjiakou.aliyuncs.com/avatar/201706291521585954aa9606954.jpg",
+    "name": "李帅123",
+    "position": "经理",
+    "id": "123",
+    "phone": "18732700111",
+    "email": "1000398674@gmail.com",
+    "address": "大厦3楼309"
+  },
+  "data": {
+    "total": 2,
+    "list": [
+      {
+        "title": "回复会员信息表是什么1？",
+        "desc": "会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会。",
+        "date": "2018-02-23 18:03",
+        "img": "https://jianjiaoedu.oss-cn-zhangjiakou.aliyuncs.com/avatar/201706291521585954aa9606954.jpg",
+        "name": "ls3",
+        "position": "经理",
+        "id": "123",
+        "phone": "18732700111",
+        "email": "1000398674@gmail.com",
+        "address": "大厦3楼309"
+      },
+      {
+        "title": "回复会员信息表是什么2？",
+        "desc": "会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会员信息基础信息表会。",
+        "date": "2018-02-23 18:03",
+        "img": "",
+        "name": "ls2",
+        "position": "经理",
+        "id": "123",
+        "phone": "18732700111",
+        "email": "1000398674@gmail.com",
+        "address": "大厦3楼309"
+      }
+    ]
+  },
+  "table": {
+    "title_en": "dwd_evt_log_web_di",
+    "title_zh": "会员信息表",
+    "views": 1000,
+    "eval": true,
+    "fields": [
+      {
+        "num": 1,
+        "name": "name",
+        "type": "String"
+      },
+      {
+        "num": 2,
+        "name": "age",
+        "type": "String"
+      }
+    ]
+  }
+}

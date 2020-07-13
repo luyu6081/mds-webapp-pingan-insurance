@@ -1,0 +1,4 @@
+# 下载字段信息
+query ($mdsObjectId: ID!){
+  downloadFiled: mdsGetColumnDataFile(mdsObjectId: $mdsObjectId)
+}

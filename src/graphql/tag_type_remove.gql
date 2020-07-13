@@ -1,0 +1,3 @@
+mutation removeTagType ($input: [ID!]) {
+  removeTagType: tagCategoryDelete (input: $input)
+}

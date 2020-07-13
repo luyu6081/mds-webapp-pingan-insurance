@@ -1,0 +1,4 @@
+# 校验当前租户是否存在激活的激活码
+query checkTenantCodeStatus {
+  data: checkTenantCodeStatus
+}

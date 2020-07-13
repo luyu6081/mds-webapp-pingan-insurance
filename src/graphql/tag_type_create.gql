@@ -1,0 +1,3 @@
+mutation createTagType ($input:TagCategoryNameDTO!) {
+  createTagType: tagCategoryCreate (input: $input)
+}

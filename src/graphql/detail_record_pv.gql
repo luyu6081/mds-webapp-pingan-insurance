@@ -1,0 +1,4 @@
+# 记录详情页pv数
+mutation recordPv ($id: ID!) {
+  recordPv: mdsRecordPv (id: $id)
+}

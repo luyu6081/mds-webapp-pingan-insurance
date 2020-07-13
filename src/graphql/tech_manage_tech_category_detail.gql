@@ -1,0 +1,21 @@
+#import "./tech_manage_category_fragment.gql"
+#import "./dbsource_fragment.gql"
+#import "./tech_manage_schedule_fragment.gql"
+
+# 获取技术类目详情页
+query TechDataDetail ($techCatalogId: ID!)  {
+  techDataDetail: mdsLoadTechCataDataById (techCatalogId: $techCatalogId) {
+    id
+    parentId
+    level
+    category {
+      ...MdsCategory
+    }
+    dbSource {
+      ...MdsDbSource
+    }
+    schedule {
+      ...MdsSchedule
+    }
+  }
+}

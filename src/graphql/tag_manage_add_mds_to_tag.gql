@@ -1,0 +1,4 @@
+# 新建关联 为Mds添加标签
+mutation addMdsToTag ($mdsIds: [ID!]!, $tagIds: [ID!]!) {
+  addMdsToTag: mdsAddTagsToMdsObject (mdsIds: $mdsIds, tagIds: $tagIds)
+}

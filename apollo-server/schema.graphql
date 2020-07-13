@@ -1,0 +1,86 @@
+# Included scalars
+scalar JSON
+scalar Upload
+
+type MdsObject {
+  id: ID!
+
+  # 英文名称
+  name: String!
+
+  # 中文名称
+  nameAlt: String
+
+  # 描述
+  desc: String
+}
+
+type Comment {
+  id: ID!
+
+  # 评论时间
+  time: String
+
+  # 内容
+  content: String!
+
+  # 回复数量
+  replyNum: Int
+
+  # 用户信息
+  user: User
+}
+
+# 用户信息
+type User {
+  id: ID!
+
+  # name
+  name: String!
+
+  # 头像地址
+  avatar: String
+}
+
+# 提问详情
+type MdsQuestionDetailObject {
+  id: ID!
+
+  # 标题
+  title: String!
+
+  # 内容
+  content: String
+
+  # 用户信息
+  user: User
+
+  # 评论
+  comments: [Comment]
+}
+
+# 提问列表
+type MdsQuestionListObject {
+  id: ID!
+
+  # 标题
+  title: String!
+
+  # 回复数量
+  replyNum: Int
+
+  # 提问时间
+  time: String
+
+  # 用户信息
+  user: User!
+}
+
+type Query {
+  mdsFavorites: [MdsObject!]!
+  mdsUpdates: [MdsObject!]!
+  mdsVisited: [MdsObject!]!
+  mdsRecommended: [MdsObject!]!
+  mdsQuestionDetail (id: ID!): MdsQuestionDetailObject!
+  mdsQuestionList: [MdsQuestionListObject!]!
+}

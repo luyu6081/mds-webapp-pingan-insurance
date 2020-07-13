@@ -1,0 +1,29 @@
+query mdsLists ($input: MdsLoadMdsObjectConditionInput) {
+  mdsLists: mdsLoadMdsObjectByCondition (input: $input) {
+    total
+    size
+    offset
+    data {
+      id
+      # 表名
+      name
+      # 表中文名字
+      chineseName
+      # 所属应用
+      belongApp
+      # 所属系统
+      belongSystem
+      # 数据库名
+      dataBaseName
+      # 元数据被打过的标签
+      tags {
+        #tagId
+        tagId: id
+        # tagObjectId
+        id: tagObjectId
+        # tag名称
+        name: tagName
+      }
+    }
+  }
+}

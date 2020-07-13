@@ -1,0 +1,4 @@
+# 通过dbsourceId获取所有的数据库名
+query DbnameList ($dbSourceId: ID!)  {
+  dbname: mdsLoadDBNameByDbSourceId (dbSourceId: $dbSourceId)
+}

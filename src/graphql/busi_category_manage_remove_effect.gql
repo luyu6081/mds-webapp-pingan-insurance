@@ -1,0 +1,4 @@
+# 查询移除类目影响
+query removeEffectCategory ($ids: [ID!]!) {
+  removeEffectCategory: mdsDeleteBusiCategoryEffect (ids: $ids)
+}

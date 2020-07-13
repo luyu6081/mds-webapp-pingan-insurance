@@ -1,0 +1,4 @@
+# 生成DDL语句
+query ($mdsObjectId: ID!){
+  generateDDL: mdsGenerateDDL(mdsObjectId: $mdsObjectId)
+}

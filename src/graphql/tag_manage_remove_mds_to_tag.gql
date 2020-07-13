@@ -1,0 +1,4 @@
+# 取消关联关系 将Mds移除标签
+mutation removeMdsToTag ($mdsIds: [ID!]!, $tagIds: [ID!]!) {
+  removeMdsToTag: mdsRemoveMdsObjectFromTags (mdsIds: $mdsIds, tagIds: $tagIds)
+}

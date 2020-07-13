@@ -1,0 +1,5 @@
+# 新建技术类目(三级-提交)
+
+mutation addTechCategory ($input: MdsTechCatalogInput!) {
+  addTechCategory: mdsAddTechCatalog (input: $input)
+}

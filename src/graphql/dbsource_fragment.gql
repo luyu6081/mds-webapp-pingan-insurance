@@ -1,0 +1,23 @@
+# 数据源VO对象
+fragment MdsDbSource on MdsDbSource {
+  # id
+  id
+  # 数据库类型
+  type
+  # 显示名称
+  name
+  # 数据库地址
+  address
+  # 端口号
+  port
+  # 连接参数
+  args
+  # 用户名
+  userName
+  # 密码
+  password
+  # modify_tm 记录修改时间，update记录时必须更新
+  modifyTm
+  # PG数据库的 isUseSchema 为true 目前 其它的返回false 
+  isUseSchema
+}

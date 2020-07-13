@@ -1,0 +1,20 @@
+#import "./details_user_fragment.gql"
+query mdsQuestionDetail ($mdsObjectId: ID!) {
+  dataDetails: mdsQuestionDetail (id: $mdsObjectId) {
+    id
+    title
+    content
+    user {
+      avatar
+    }
+    comments {
+      id
+      time
+      content
+      replyNum
+      user {
+        ...User
+      }
+    }
+  }
+}

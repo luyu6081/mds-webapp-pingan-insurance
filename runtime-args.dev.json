@@ -1,0 +1,10 @@
+
+{
+  "VUE_APP_GRAPHQL_HTTP": "http://mds-all-frontier.dev.jinxin.cloud/graphql",
+  "VUE_APP_GRAPHQL_WS": "ws://mds-all-frontier.dev.jinxin.cloud/subscriptions",
+  "VUE_APP_UC_HTTP": "http://auth-frontier.dev.jinxin.cloud/graphql",
+  "VUE_APP_LOGIN_URL": "http://login.dev.jinxin.cloud/",
+  "VUE_APP_UPLOADS_HTTP": "http://mds-all-frontier.dev.jinxin.cloud/filesUpload",
+  "VUE_APP_DOWNLOAD_HTTP": "http://mds-all-frontier.dev.jinxin.cloud/fileDownload",
+  "VUE_APP_KC_GRAPHQL_HTTP": "http://kc.dev.jinxin.cloud/?system=MDS"
+}

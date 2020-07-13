@@ -1,0 +1,4 @@
+# 下载调度日志
+query scheduleLogFile ($logIds: [ID!]!)  {
+  scheduleLogFile: mdsGetScheduleLogFile (logIds: $logIds)
+}

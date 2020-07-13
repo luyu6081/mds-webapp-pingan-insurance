@@ -1,0 +1,3 @@
+mutation removeDbSource ($ids: [ID!]!) {
+  removeDbSource: mdsDeleteDbSource (ids: $ids)
+}

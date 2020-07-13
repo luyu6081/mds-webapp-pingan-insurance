@@ -1,0 +1,5 @@
+# 更新技术类目(三级-更新)
+
+mutation updateTechCategory ($input: MdsTechCatalogInput!) {
+  updateTechCategory: mdsUpdateTechCatalog (input: $input)
+}

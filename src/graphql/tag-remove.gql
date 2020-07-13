@@ -1,0 +1,3 @@
+mutation removeTag ($mdsObjectId: ID!, $tagId: ID!) {
+  removeTag: mdsUserUnPasteTag (mdsObjectId: $mdsObjectId, tagId: $tagId)
+}

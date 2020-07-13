@@ -1,0 +1,5 @@
+# 查询用户拥有的元数据表权限里的字段权限id集合
+
+query d4aUserFieldIdList ($mdsObjectId: ID!)  {
+  applyFieldIdList: d4aUserFieldIdList (mdsObjectId: $mdsObjectId)
+}

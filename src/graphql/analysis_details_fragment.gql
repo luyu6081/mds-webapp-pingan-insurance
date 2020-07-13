@@ -1,0 +1,40 @@
+fragment MdsNode on MdsNode {
+  # id
+  # #数据库名称
+  # databaseName
+  # #对象名称
+  # name
+  # #字段名称
+  # columnName
+  # #对象类型
+  # type
+  # #源个数
+  # sourceNum
+  # #目标个数
+  # targetNum
+  # #仅物理
+  # onlyOnPhysics
+  # #表空间
+  # tableSpace
+  # #记录数
+  # recordNum
+  id
+  #平台名称
+  platformName
+  #数据库名称
+  databaseName
+  #对象名称
+  name
+  #字段名称
+  columnName
+  #对象类型
+  type
+  #注释
+  desc
+  #映射脚本
+  etljobs: etlJobs {
+    id
+    name
+    content
+  }
+}

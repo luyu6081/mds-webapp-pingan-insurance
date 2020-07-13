@@ -1,0 +1,26 @@
+query dataFieldDetails ($mdsObjectId: ID!)  {
+  dataFieldDetails: mdsLoadMdsObject (mdsObjectId: $mdsObjectId) {
+    id
+    name
+    chineseName
+    fieldDetail: mdsColumns {
+      id
+      # 元数据字段名字
+      name
+      # 元数据字段类型
+      type
+      # 元数据字段描述
+      desc
+      # 资产等级
+      propertyLevel
+      # 安全等级
+      securityLevel
+      #访问热度
+      browseNum
+      # 是否是主外键
+      isPrimaryKey,
+      # 是否是主外键（后端已处理成中文，'主键'，'外键'，'-'）
+      columnFeature,
+    }
+  }
+}

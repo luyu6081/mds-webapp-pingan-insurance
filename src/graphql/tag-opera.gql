@@ -1,0 +1,3 @@
+mutation operaTag ($mdsObjectId: ID!, $tagId: ID!, $isOperations: Boolean!) {
+  operaTag: mdsLikeTag (mdsObjectId: $mdsObjectId, tagId: $tagId, isOperations: $isOperations)
+}

@@ -1,0 +1,16 @@
+query categoriesLists ($status: CategoryStatusEnum) {
+  categoriesLists: mdsLoadCategories (status: $status) {
+    # 技术类目菜单
+    techCategories {
+      id
+      name
+      parentId
+    }
+    # 业务类目菜单
+    busiCategories{
+      id
+      name
+      parentId
+    }
+  }
+}

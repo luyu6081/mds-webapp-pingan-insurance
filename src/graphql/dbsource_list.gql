@@ -1,0 +1,12 @@
+#import "./dbsource_fragment.gql"
+
+query DbsourceList ($input: MdsLoadDbSourcesConditionInput)  {
+  dbsources: mdsLoadDbSourcesByCondition (input: $input) {
+    total
+    size
+    offset
+    data {
+      ...MdsDbSource
+    }
+  }
+}

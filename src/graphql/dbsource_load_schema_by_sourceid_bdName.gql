@@ -1,0 +1,4 @@
+# 通过dbsourceId和dbName获取当前对应的schema
+query schemaList ($dbSourceId: ID!, $dbName: String)  {
+  schemaList: mdsLoadSchemaByDbSourceIdAndDbName (dbSourceId: $dbSourceId, dbName: $dbName)
+}

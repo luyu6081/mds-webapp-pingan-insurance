@@ -1,0 +1,3 @@
+mutation watchedOpera ($mdsObjectId: ID!, $isOperations: Boolean!) {
+  watchedOpera: mdsSubscribeMdsObject (mdsObjectId: $mdsObjectId, isOperations: $isOperations) 
+}

@@ -1,0 +1,13 @@
+# 获取技术类目详情页
+query scheduleLog ($input: MdsLoadScheduleLogsInput!)  {
+  scheduleLog: mdsLoadScheduleLogs (input: $input) {
+    total
+    offset
+    size
+    data {
+      id
+      modifyTm
+      desc
+    }
+  }
+}

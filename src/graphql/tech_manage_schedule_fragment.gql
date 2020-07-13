@@ -1,0 +1,26 @@
+#import "./details_user_fragment.gql"
+
+# 调度任务
+fragment MdsSchedule on MdsSchedule {
+  id
+  # 周期　天、周、月
+  scheduledType
+  # 调度时间
+  scheduledTime
+  # 调度星期
+  scheduledWeek
+  # 调度天
+  scheduledDay
+  # 技术类目Id
+  categoryId
+  # 数据源Id
+  dbSourceId
+  # 数据库名
+  dbName
+  # 最后运行时间
+  lastRunTm
+  # 技术负责人列表
+  techMans {
+    ...User
+  }
+}
